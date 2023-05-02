@@ -9,3 +9,6 @@ CREATE TABLE IF NOT EXISTS albums (
     genre VARCHAR(20) NOT NULL,
     PRIMARY KEY (id)
 );
+ALTER TABLE albums ADD UNIQUE (artist, name);
+DESCRIBE albums;
+SELECT * FROM albums;
